@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fidel | Software Engineer & Algorithmic Trading Developer</title>
+<style>
+:root{--bg:#fafaf7;--card:#fff;--text:#1c1c1a;--muted:#62625c;--accent:#b8860b;--line:#e4e2da;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121211;--card:#1b1b19;--text:#efeee8;--muted:#a3a299;--accent:#e0b04a;--line:#2d2d29;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121211;--card:#1b1b19;--text:#efeee8;--muted:#a3a299;--accent:#e0b04a;--line:#2d2d29;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,"Times New Roman",serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+h1,h2,h3,nav,.tag,.btn{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:72px 0 40px}
+.kicker{color:var(--accent);font:600 13px system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(34px,7vw,56px);line-height:1.1;margin:10px 0 16px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--muted);max-width:640px;margin:0}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0 0 12px;color:var(--muted);font-size:15px;line-height:1.55}
+.tag{display:inline-block;font-size:12px;padding:2px 9px;border-radius:99px;border:1px solid var(--line);color:var(--muted);margin:0 6px 6px 0}
+.skills .tag{font-size:14px;padding:5px 13px;color:var(--text)}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);font:14px system-ui,sans-serif}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Software Engineering Student · Algorithmic Trading Developer</div>
+  <h1>Hi, I’m Fidel. I build systems that make decisions with data.</h1>
+  <p class="lead">I’m a second-year software engineering student who writes Python trading systems for the financial markets. I like turning messy, fast-moving data into clear rules, tested code, and reliable automation.</p>
+  <div class="btns">
+    <a class="btn primary" href="https://github.com/Astrozinger">View my GitHub</a>
+    <a class="btn" href="#projects">See projects</a>
+  </div>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>I build and iterate on automated trading bots for MetaTrader 5, mainly for gold (XAUUSD) and major forex pairs. My goal is to replace gut-feel decisions with systematic, disciplined, testable logic. Alongside my studies I’m focusing on backend development, databases, cloud, system design, and AI/ML, and I’m looking for internships and projects where I can grow.</p>
+</section>
+
+<section id="projects">
+  <h2>Selected Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>AURUM_XAUUSD</h3><p>A complete gold trading system that implements Smart Money Concepts and technical-analysis ideas, with a bar-by-bar backtester to test strategies before risking anything.</p><span class="tag">Python</span><span class="tag">Backtesting</span><span class="tag">MT5</span></div>
+    <div class="card"><h3>AEGIS_TRADE</h3><p>A modular MT5 bot built as separate, swappable components, with a versioned roadmap and ongoing work on integration and performance reporting.</p><span class="tag">Modular design</span><span class="tag">Python</span></div>
+    <div class="card"><h3>QuantEdge</h3><p>A quant trading bot that blends statistical, market-regime, and machine-learning signals for gold and major forex pairs.</p><span class="tag">Statistics</span><span class="tag">ML</span></div>
+    <div class="card"><h3>Regime-Filtered Trend Bot</h3><p>A 12-file Python system that first detects whether the market is trending or ranging, then only trades when conditions suit the strategy.</p><span class="tag">Market regimes</span><span class="tag">Python</span></div>
+    <div class="card"><h3>GoldAI Assistant</h3><p>A module connecting live MT5 market data to Google’s Gemini API so an AI model can analyse trades in real time.</p><span class="tag">API integration</span><span class="tag">Gemini</span></div>
+    <div class="card"><h3>Confluence Analysis Bot</h3><p>Scores setups across seven major pairs and gold using market structure, price action, and candlestick signals, then emails entry, stop-loss, and take-profit levels.</p><span class="tag">Automation</span><span class="tag">Email alerts</span></div>
+    <div class="card"><h3>Trading Website</h3><p>A Flask API powering a web app with a signal engine that routes between eleven strategies across five currency pairs.</p><span class="tag">Flask</span><span class="tag">REST API</span></div>
+    <div class="card"><h3>Digital Access-Control Circuit</h3><p>A course project in CircuitMaker: a two-digit code lock with a three-attempt lockout, upgraded from a simple code-breaker game.</p><span class="tag">Digital logic</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span class="tag">Python</span><span class="tag">MQL5 / MetaTrader 5</span><span class="tag">Flask</span><span class="tag">API integration</span><span class="tag">Backtesting</span><span class="tag">Statistical analysis</span><span class="tag">Debugging &amp; testing</span><span class="tag">Git &amp; GitHub</span><span class="tag">Technical writing</span>
+  </div>
+</section>
+
+<section>
+  <h2>Get in touch</h2>
+  <p>Want to talk about a project, an internship, or a collaboration? Find my code and updates on <a href="https://github.com/Astrozinger">GitHub</a>.</p>
+</section>
+
+<footer>© 2026 Fidel · Software Engineering Student</footer>
+</div>
+</body>
+</html>
